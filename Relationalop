@@ -1,0 +1,21 @@
+import java.util.*;
+public class Relationalop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+        System.out.println("Enter third number: ");
+        int c = sc.nextInt();
+
+        System.out.println("Comparing " + a + " and " + b + "and " + c);
+        boolean all three are positive = (a>0) && (b>0) && (c>0);
+        boolean at least one is even = (a%2==0) || (b%2==0) || (c%2==0);;
+        boolean none is zero = !(a==0 || b==0 || c==0);
+        System.out.println("All three are positive: " + all three are positive);
+        System.out.println("At least one is even: " + at least one is even);            
+        System.out.println("None is zero: " + none is zero);
+
+    }
+}   

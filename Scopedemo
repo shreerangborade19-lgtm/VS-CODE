@@ -1,0 +1,20 @@
+
+class Scope {
+    static int a = 10;   
+    int b = 20;         
+}
+
+public class Scopedemo {
+
+    public static void main(String[] args) {
+
+        int c = 30;      
+
+        Scopedemo obj = new Scopedemo();
+
+        System.out.println("Value of a: " + a);
+        System.out.println("Value of b: " + obj.b);
+        System.out.println("Value of c: " + c);
+    }
+}
+
